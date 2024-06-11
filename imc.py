@@ -4,9 +4,12 @@ def calcular_imc(peso, altura):
 
 
 # Solicitando valor para jogar na função
-peso = float(input("Digite seu peso:"))
-altura = float(input("Digite sua altura:"))
-
+try:
+    peso = float(input("Digite seu peso:"))
+    altura = float(input("Digite sua altura:"))
+except:
+    print("Digite um valor valido!")
+    
 # Adicionando calor a uma variavel
 imc = calcular_imc(peso, altura)
 
